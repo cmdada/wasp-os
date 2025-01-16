@@ -21,7 +21,31 @@ auto_load = true
 file = 'apps/calculator.py'
 
 [[app]]
+file = 'apps/gallery.py'
+
+[[app]]
+file = 'apps/game_of_life.py'
+
+[[app]]
+file = 'apps/demo.py'
+
+[[app]]
+file = 'apps/hello.py'
+
+[[app]]
+file = 'apps/flashlight.py'
+
+[[app]]
 file = 'apps/disa_b_l_e.py'
+
+[[app]]
+file = 'apps/morse.py'
+
+[[app]]
+file = 'apps/haiku.py'
+
+[[app]]
+file = 'apps/level.py'
 
 [[app]] # If only one watch face is included this app can be removed
 file = 'apps/faces.py'
@@ -31,9 +55,11 @@ no_except = true
 [[watchface]]
 file = 'watch_faces/clock.py'
 
-[[watchface]] # Requires ClockApp to also be installed
-file = 'watch_faces/week_clock.py'
-default = true
+[[watchface]]
+file = 'watch_faces/dual_clock.py
 
 [[watchface]]
-file = 'watch_faces/chrono.py'
+file = 'watch_faces/resistor_clock.py
+
+[[watchface]]
+file = 'watch_faces/word_clock.py
