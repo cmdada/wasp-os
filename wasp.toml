@@ -56,10 +56,10 @@ no_except = true
 file = 'watch_faces/clock.py'
 
 [[watchface]]
-file = 'watch_faces/dual_clock.py
+file = 'watch_faces/dual_clock.py'
 
 [[watchface]]
-file = 'watch_faces/resistor_clock.py
+file = 'watch_faces/resistor_clock.py'
 
 [[watchface]]
-file = 'watch_faces/word_clock.py
+file = 'watch_faces/word_clock.py'
