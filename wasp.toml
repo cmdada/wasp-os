@@ -1,47 +1,29 @@
-# The default build for wasp-os. Modify to customize your own build.
-# At least one watch face must be specified. Quick ring apps will be added in order.
-
-[[app]]
-file = 'apps/stopwatch.py'
-quick_ring = true
-
-[[app]]
-file = 'apps/heart.py'
-quick_ring = true
 
 [[app]]
 file = 'apps/alarm.py'
-
-[[app]]
-file = 'apps/timer.py'
 auto_load = true
 
 [[app]]
-file = 'apps/calculator.py'
-
-[[app]]
-file = 'apps/gallery.py'
+file = 'apps/timer.py'
 
 [[app]]
 file = 'apps/game_of_life.py'
 
 [[app]]
+file = 'apps/demo.py'
+[[app]]
 file = 'apps/hello.py'
 
 [[app]]
-file = 'apps/flashlight.py'
-
-[[app]]
-file = 'apps/disa_b_l_e.py'
-
-[[app]]
-file = 'apps/morse.py'
-
-[[app]]
-file = 'apps/haiku.py'
-
-[[app]]
 file = 'apps/level.py'
+
+[[app]] # If only one watch face is included this app can be removed
+file = 'apps/faces.py'
+auto_load = true
+no_except = true
+
+[[watchface]]
+file = 'watch_faces/dual_clock.py'
 
 [[watchface]]
 file = 'watch_faces/word_clock.py'
