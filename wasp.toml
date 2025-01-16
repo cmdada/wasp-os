@@ -10,8 +10,6 @@ file = 'apps/timer.py'
 file = 'apps/game_of_life.py'
 
 [[app]]
-file = 'apps/demo.py'
-[[app]]
 file = 'apps/hello.py'
 
 [[app]]
