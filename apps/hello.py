@@ -7,7 +7,7 @@ class HelloApp():
     """A hello world application for wasp-os."""
     NAME = "Hello"
 
-    def __init__(self, msg="Hello, world!"):
+    def __init__(self, msg="Hello, world! This is programmed by Ada!"):
         self.msg = msg
 
     def foreground(self):
