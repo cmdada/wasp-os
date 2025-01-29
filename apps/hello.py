@@ -4,7 +4,7 @@
 import wasp
 
 class HelloApp():
-    """A hello world application for wasp-os."""
+    """A scrolling vocabulary app for wasp-os."""
     NAME = "Hello"
 
     def __init__(self):
@@ -61,7 +61,8 @@ class HelloApp():
             "50. consumir alcohol - to consume alcohol",
             "51. descafeinado/a - decaffeinated"
         ]
-        self.offset = 0  # Scrolling position
+        self.offset = 0  # Scroll position
+        wasp.system.request_event(wasp.EventMask.TOUCH)  # Enable touch events
 
     def foreground(self):
         self._draw()
@@ -76,12 +77,15 @@ class HelloApp():
             if self.offset + i < len(self.vocab):
                 draw.string(self.vocab[self.offset + i], 0, 20 * i, width=240)
 
-    def scroll_up(self):
-        if self.offset > 0:
-            self.offset -= 1
-            self._draw()
+    def touch(self, event):
+        """Handle tap event to scroll down."""
+        if event[0] == wasp.EventType.TOUCH:
+            self.scroll_down()
 
     def scroll_down(self):
+        """Scroll down or loop back to the top."""
         if self.offset < len(self.vocab) - 5:
             self.offset += 1
-            self._draw()
+        else:
+            self.offset = 0  # Loop back to the beginning
+        self._draw()
